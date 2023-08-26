@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Style Modification</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Set the color of the first paragraph with class "para" to red
+      $(".para:first").css("color", "red");
+      
+      // Set the color of the second paragraph with class "para" to yellow
+      $(".para:eq(1)").css("color", "yellow");
+    });
+  </script>
+  <style>
+    .para {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <p class="para">This is the first paragraph.</p>
+  <p class="para">This is the second paragraph.</p>
+  <p class="para">This is another paragraph.</p>
+</body>
+</html>
